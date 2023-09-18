@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more grid</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    
+            .item1{
+                grid-area: header;
+            }
+            .item2{
+                grid-area: menu;
+            }
+            .item3{
+                grid-area: main;
+            }
+            .item4{
+                grid-area: right;
+            }
+            .item5{
+                grid-area: footer;
+            }
+
+            .container{
+                display: grid;
+                grid-template-areas: 
+                'menu menu main'
+                'menu menu footer'
+                ;
+                gap: 10px;
+                /* background-color: salmon; */
+                padding: 10px;
+                width: 1300px;
+                margin-left: 305px;
+            }
+
+            .container > div{
+                background-color: yellowgreen;
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+            }
+            div.item2{
+                background-image: url(a.png);
+                background-repeat: no-repeat;
+                height: 400px;
+                background-size: 100% 100%;
+            }
+            div.item3{
+                background-image: url(b.png);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            div.item5{
+                background-image: url(c.png);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            header{
+                width: 100%;
+                height: 225px;
+                background: linear-gradient(-180deg, #f53d2d, #f63);
+                display: flex;
+                gap: 20px;
+            }
+            .atas{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+                margin-left: 300px;
+                margin-right: 300px;
+            }
+            .atasatas a:hover{
+                color: gray;
+            }
+            .ataskanan a:hover{
+                color: gray;
+            }
+            .ataskanan a{
+                font-size: 15px;
+            }
+            .ataskanan p{
+                font-size: 15px;
+                color: white;
+            }
+            div.atas a{
+                color: white;
+                font-size: 15px;
+                text-transform: capitalize;
+                text-decoration: none;
+            }
+            div.atas span{
+                color: white;
+                font-size: 20px;
+            }
+            div.atasatas, .ataskanan{
+                display: flex;
+                gap: 10px;
+            }
+            div.shopee{
+                margin-left: 300px;
+                display: flex;
+                flex-direction: row;
+                color: white;
+                align-items: center;
+                gap: 10px;
+            }
+            div.shopee p{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            input.search{
+            width: 800px;
+            height: 50px;
+            border: none;
+           }
+           div.searchbar{
+            display: flex;
+            justify-content: center;
+            border: 1px white solid;
+            background-color: white;
+            margin-top: 40px;
+            width: 875px;
+            height: 51px;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+        }
+           input.button{
+            border: none;
+            padding: 10px;
+            background-color: #f63;
+            width: 60px;
+           }
+           input.search{
+            padding: 10px;
+            border: none;
+           }
+           div.atasbawah{
+            display: flex;
+            /* justify-content: space-evenly; */
+            flex-direction: row;
+            gap: 20px;
+           }
+           div.shop{
+            margin-top: 30px;
+            margin-left: 30px;
+           }
+           div.kategori{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+           }
+           div.kategori a{
+            text-decoration: none;
+            color: rgb(216, 216, 216);
+            font-size: 12px;
+           }
+           div.space{
+            display: flex;
+            
+           }
+           /* .teks{
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            text-align: center;
+            justify-content: space-evenly;
+           }
+           .teks p{
+            font-size: 10px;
+           } */
+           /* div.logo{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            gap: 25px; 
+           }*/
+           .more_container {
+    display: flex;
+    width: 1120px;
+    height: 112px;
+    /* background-color: violet; */
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.more_container a {
+    margin: 0 10px 0 10px;
+}
+
+.more_container a div {
+    width: 92px;
+    height: 50px;
+}
+
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten {
+    background-repeat: no-repeat;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 12.5px;
+    background-size: 50px;
+    background-position: center 0;
+}
+
+.one {
+    width: 112px;
+    height: 112px;
+    /* background-color: red; */
+    background-image: url(assets/1.png);
+}
+
+.two {
+    width: 112px;
+    height: 112px;
+    /* background-color: orange; */
+    background-image: url(assets/2.png);
+}
+
+.three {
+    width: 112px;
+    height: 112px;
+    /* background-color: yellow; */
+    background-image: url(assets/3.png);
+}
+
+.four {
+    width: 112px;
+    height: 112px;
+    /* background-color: yellowgreen; */
+    background-image: url(assets/4.png);
+}
+
+.five {
+    width: 112px;
+    height: 112px;
+    /* background-color: green; */
+    background-image: url(assets/5.png);
+}
+
+.six {
+    width: 112px;
+    height: 112px;
+    /* background-color: blue; */
+    background-image: url(assets/6.png);
+}
+
+.seven {
+    width: 112px;
+    height: 112px;
+    /* background-color: navy; */
+    background-image: url(assets/7.png);
+}
+
+.eight {
+    width: 112px;
+    height: 112px;
+    /* background-color: blueviolet; */
+    background-image: url(assets/8.png);
+}
+
+.nine {
+    width: 112px;
+    height: 112px;
+ 
+    background-image: url(assets/9.png);
+}
+
+.ten {
+    width: 112px;
+    height: 112px;
+    background-image: url(assets/10.png);
+}
+/* div.pemisah{
+    display: flex;
+    gap: 10px;
+} */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="atas">
+        <div class="atasatas">
+            <a href="#">Seller centre</a></span>
+            <span>|</span>
+            <a href="#">Mari Berjualan</a>
+            <span>|</span>
+            <a href="#">Download</a>
+            <span>|</span>
+            <a href="#">Ikuti Kami Di</a>
+            <a href="#">😎</a>
+            <a href="#">😃</a>
+            <a href="#">😒</a>
+        </div>
+        <div class="ataskanan">
+            <p>😒</p>
+            <a href="#">Notifikasi</a>
+            <p>🙄</p>
+            <a href="#">Bantuan</a>
+            <p>😀</p>
+            <a href="#">Bahasa Indonesia</a>
+            <a href="#">Daftar</a>
+            <p>|</p>
+            <a href="#">Log In</a>
+        </div>
+        </div>
+        <section class="content">
+        <div class="atasbawah">
+            <div class="shopee">
+                <img src="assets/brand.png" alt="shopee">
+                <p>Shopee</p>
+            </div>
+            <div class="space">
+            <div class="searchbar">
+        <form action="https://shopee.co.id/search?keyword=">
+        <input class="search" type="text" name="keyword" id="" placeholder="Daftar & Dapat Voucher Gratis">
+        <input class="button" type="submit" value="🔍">
+        </form>
+        </div>
+        <div class="shop">
+            <img src="assets/shop.png" alt="">
+        </div>
+    </div>
+</div>
+    <div class="kategori">
+        <a href="#">Sendal</a>
+        <a href="#">Celana</a>
+        <a href="#">Topi</a>
+        <a href="#">Sepatu Pria</a>
+        <a href="#">Baju Crop Wanita</a>
+        <a href="#">Hoodie Pria</a>
+        <a href="#">Kaos Oversize Wanita</a>
+        <a href="#">Tas Sekolah</a>
+        <a href="#"> Tas Selempang Wanita</a>
+        <a href="#">Jam Tangan</a>
+    </div>
+</secttion>
+    </header>
+    <div class="container">
+        <!-- <div class="item1">header</div> -->
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <!-- <div class="item4">right</div> -->
+        <div class="item5"></div>
+    
+        
+    
+    </div>
+    <section class="more_container">
+        
+        <a href="#" class="one">
+            <div></div>
+            <p>Shopee Pilih Lokal</p>
+        </a>
+
+        <a href="#" class="two">
+            <div></div>
+            <p>Serba Seribu</p>
+        </a>
+
+        <a href="#" class="three">
+            <div></div>
+            <p>Pulsa, Tagihan, dan Tiket</p>
+        </a>
+
+        <a href="#" class="four">
+            <div></div>
+            <p>inFashion</p>
+        </a>
+
+        <a href="#" class="five">
+            <div></div>
+            <p>Shopee Supermarket</p>
+        </a>
+
+        <a href="#" class="six">
+            <div></div>
+            <p>Bayar di Tempat</p>
+        </a>
+
+        <a href="#" class="seven">
+            <div></div>
+            <p>Murah Lebay</p>
+        </a>
+
+        <a href="#" class="eight">
+            <div></div>
+            <p>Graktis Ongkir dan Voucher</p>
+        </a>
+
+        <a href="#" class="nine">
+            <div></div>
+            <p>Shopee Barokah</p>
+        </a>
+
+        <a href="#" class="ten">
+            <div></div>
+            <p>Semua Promo</p>
+        </a>
+    
+    </section>
+</body>
+</html>
